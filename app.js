@@ -90,7 +90,6 @@ app.get('/sse', (req, res) => {
   });
 });
 
-// 404 handler
 app.use((req, res) => {
   res.status(404).type('text/plain').send('Not Found');
 });
